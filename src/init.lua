@@ -54,7 +54,7 @@ WindUI.ScreenGui = New("ScreenGui", {
 })
 
 WindUI.NotificationGui = New("ScreenGui", {
-    Name = "WindUI-Notifications",
+    Name = "VinUi-Notifications",
     Parent = GUIParent,
     IgnoreGuiInset = true,
 })
@@ -64,7 +64,7 @@ ProtectGui(WindUI.NotificationGui)
 math.clamp(WindUI.TransparencyValue, 0, 0.4)
 
 local Notify = require("./Components/Notification")
-local Holder = Notify.Init(WindUI.NotificationGui)
+local Holder = Notify.Init(VinUi.NotificationGui)
 
 function WindUI:Notify(Config)
     Config.Holder = Holder.Frame
