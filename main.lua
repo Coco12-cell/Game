@@ -29,9 +29,9 @@ end
 local Confirmed = false
 
 WindUI:Popup({
-    Title = "Welcome! Popup Example",
+    Title = "Welcome to VinUi!",
     Icon = "info",
-    Content = "This is an Example UI for the " .. gradient("WindUI", Color3.fromHex("#00FF87"), Color3.fromHex("#60EFFF")) .. " Lib",
+    Content = "This is an Example UI for the " .. gradient("VinUI", Color3.fromHex("#00FF87"), Color3.fromHex("#60EFFF")) .. " Lib",
     Buttons = {
         {
             Title = "Cancel",
@@ -54,7 +54,7 @@ repeat wait() until Confirmed
 --
 
 local Window = WindUI:CreateWindow({
-    Title = "WindUI Library",
+    Title = "VinUI Library",
     Icon = "door-open",
     Author = "Example UI",
     Folder = "CloudHub",
@@ -678,7 +678,7 @@ Tabs.CreateThemeTab:Button({
     end
 })
 
-local InviteCode = "ApbHXtAwU2"
+local InviteCode = "vionyx-hub"
 local DiscordAPI = "https://discord.com/api/v10/invites/" .. InviteCode .. "?with_counts=true&with_expiration=true"
 
 local Response = game:GetService("HttpService"):JSONDecode(WindUI.Creator.Request({
@@ -856,12 +856,12 @@ local function tableToClipboard(luau_table, indent)
 end
 
 Tabs.Tests:Section({
-    Title = "Get WindUI JSON"
+    Title = "Get VinUI JSON"
 })
 
 Tabs.Tests:Button({
-    Title = "Get WindUI JSON",
+    Title = "Get VinUI JSON",
     Callback = function()
-        tableToClipboard(WindUI)
+        tableToClipboard(VinUI)
     end
 })
