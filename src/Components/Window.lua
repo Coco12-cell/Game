@@ -46,7 +46,7 @@ return function(Config)
     
     
     if Window.Folder then
-        makefolder("WindUI/" .. Window.Folder)
+        makefolder("VinUi/" .. Window.Folder)
     end
     
     local UICorner = New("UICorner", {
